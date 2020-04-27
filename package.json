@@ -1,0 +1,35 @@
+{
+  "name": "gihwan.dev",
+  "version": "1.0.0-SNAPSHOT",
+  "description": "🧑🏻‍💻",
+  "bugs": {
+    "url": "https://github.com/ghkim3221/gihwan.dev/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Gihwan Kim",
+    "email": "ghkim3221@gmail.com",
+    "url": "https://gihwan.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ghkim3221/gihwan.dev.git"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^2.21.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "private": true
+}
