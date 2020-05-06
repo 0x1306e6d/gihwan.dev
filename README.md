@@ -1,5 +1,7 @@
 # gihwan.dev
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/58d1386e-82e3-41b6-a854-7a2bdbdf6607/deploy-status)](https://app.netlify.com/sites/gihwan-dev/deploys)
+
 👨🏻‍💻: https://gihwan.dev
 
 ## License
