@@ -26,7 +26,11 @@ const IconButton = ({ href, icon }) => {
 
 IconButton.propTypes = {
   href: PropTypes.string,
-  icon: PropTypes.string.isRequired
+  icon: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.array,
+    PropTypes.string
+  ]).isRequired
 }
 
 export default IconButton
