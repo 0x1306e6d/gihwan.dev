@@ -14,6 +14,7 @@ const ArticleList = ({ articles }) => (
 ArticleList.propTypes = {
   articles: PropTypes.arrayOf(
     PropTypes.shape({
+      excerpt: PropTypes.string.isRequired,
       frontmatter: PropTypes.shape({
         slug: PropTypes.string.isRequired,
         date: PropTypes.string.isRequired,
