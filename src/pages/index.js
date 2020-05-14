@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import ArticleLink from "../components/article-link"
+import ArticleList from "../components/article-list"
 import DefaultLayout from "../layouts/default"
 
 export default ({
@@ -9,14 +9,12 @@ export default ({
     allMarkdownRemark: { edges }
   }
 }) => {
-  const articles = edges
-    .filter(edge => !!edge.node.frontmatter.date)
-    .map(edge => <ArticleLink key={edge.node.id} article={edge.node} />)
+  const articles = edges.map(edge => edge.node)
 
   return (
     <DefaultLayout>
       <h1>Hello World!</h1>
-      {articles}
+      <ArticleList articles={articles} />
     </DefaultLayout>
   )
 }
