@@ -5,19 +5,33 @@ import { Link } from "gatsby"
 
 const StyledArticleListItem = styled.article`
   margin-bottom: 64px;
+
   display: flex;
   flex: 1;
+  flex-direction: column;
+  @media only screen and (min-width: 992px) {
+    flex-direction: row;
+  }
 `
 
 const StyledArticleDate = styled.span`
-  width: 33.33333%;
+  width: 100%;
+  @media only screen and (min-width: 992px) {
+    width: 33.33333%;
+  }
+
   display: flex;
   flex: none;
+
   font-size: 1rem;
 `
 
 const StyledArticleListItemContent = styled.div`
-  width: 66.66666%;
+  width: 100%;
+  @media only screen and (min-width: 992px) {
+    width: 66.66666%;
+  }
+
   display: flex;
   flex: 1;
   flex-direction: column;
