@@ -3,27 +3,44 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
+const StyledArticleListItem = styled.article`
+  margin-bottom: 64px;
+  display: flex;
+  flex: 1;
+`
+
+const StyledArticleDate = styled.span`
+  width: 33.33333%;
+  display: flex;
+  flex: none;
+  font-size: 1rem;
+`
+
+const StyledArticleListItemContent = styled.div`
+  width: 66.66666%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+`
+
 const StyledArticleLink = styled(props => <Link {...props} />)`
   color: #000000;
   text-decoration: none;
   border-bottom: 1px solid #ffd55e;
 `
 
-const StyledArticleDate = styled.span`
-  margin-right: 1rem;
-  font-size: 1rem;
-`
-
 const ArticleListItem = ({ article }) => (
-  <div>
-    <h2>
-      <StyledArticleDate>{article.frontmatter.date}</StyledArticleDate>
-      <StyledArticleLink to={article.frontmatter.slug}>
-        {article.frontmatter.title}
-      </StyledArticleLink>
-    </h2>
-    <p>{article.excerpt}</p>
-  </div>
+  <StyledArticleListItem>
+    <StyledArticleDate>{article.frontmatter.date}</StyledArticleDate>
+    <StyledArticleListItemContent>
+      <h2>
+        <StyledArticleLink to={article.frontmatter.slug}>
+          {article.frontmatter.title}
+        </StyledArticleLink>
+      </h2>
+      <p>{article.excerpt}</p>
+    </StyledArticleListItemContent>
+  </StyledArticleListItem>
 )
 
 const ArticleList = ({ articles }) => (
