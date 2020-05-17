@@ -13,7 +13,7 @@ export default ({
 
   return (
     <DefaultLayout>
-      <h1>Hello World!</h1>
+      <h1>All Articles</h1>
       <ArticleList articles={articles} />
     </DefaultLayout>
   )
