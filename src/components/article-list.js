@@ -30,14 +30,14 @@ const Metadata = styled.div`
   flex-direction: row;
 `
 
-const ArticleDate = styled.time`
+const Date = styled.time`
   margin-top: 0;
   margin-bottom: 16px;
 
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.75rem;
-  letter-spacing: 0.009375em;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 0.1666666667em;
 `
 
 const Separator = styled.span`
@@ -49,10 +49,10 @@ const TimeToRead = styled.p`
   margin-top: 0;
   margin-bottom: 16px;
 
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.75rem;
-  letter-spacing: 0.009375em;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 0.1666666667em;
 `
 
 const Excerpt = styled.p`
@@ -73,7 +73,7 @@ const ArticleListItem = ({ article }) => (
       </StyledLink>
     </Title>
     <Metadata>
-      <ArticleDate>{article.frontmatter.date}</ArticleDate>
+      <Date>{article.frontmatter.date}</Date>
       <Separator />
       <TimeToRead>{article.timeToRead} min read</TimeToRead>
     </Metadata>
