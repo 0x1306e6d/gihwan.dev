@@ -31,6 +31,7 @@ export const pageQuery = graphql`
             slug
             title
           }
+          timeToRead
         }
       }
     }
