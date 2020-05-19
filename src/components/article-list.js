@@ -37,6 +37,11 @@ const StyledArticleListItemContent = styled.div`
   flex-direction: column;
 `
 
+const StyledArticleTitle = styled.h2`
+  margin-top: 0;
+  margin-bottom: 16px;
+`
+
 const StyledArticleLink = styled(props => <Link {...props} />)`
   color: #000000;
   text-decoration: none;
@@ -47,11 +52,11 @@ const ArticleListItem = ({ article }) => (
   <StyledArticleListItem>
     <StyledArticleDate>{article.frontmatter.date}</StyledArticleDate>
     <StyledArticleListItemContent>
-      <h2>
+      <StyledArticleTitle>
         <StyledArticleLink to={article.frontmatter.slug}>
           {article.frontmatter.title}
         </StyledArticleLink>
-      </h2>
+      </StyledArticleTitle>
       <p>{article.excerpt}</p>
     </StyledArticleListItemContent>
   </StyledArticleListItem>
