@@ -12,6 +12,14 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-styled-components`
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Noto Sans KR"]
+        }
+      }
     }
   ]
 }
