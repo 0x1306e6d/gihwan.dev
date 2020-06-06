@@ -20,6 +20,12 @@ module.exports = {
           families: ["Noto Sans KR"]
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-138964328-2"
+      }
     }
   ]
 }
