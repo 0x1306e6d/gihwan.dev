@@ -24,7 +24,7 @@ const StyledNavigationEnd = styled.div`
 const Navigation = () => (
   <StyledNavigation>
     <StyledNavigationStart>
-      <h1>Gihwan Kim</h1>
+      <h1>Gihwan's Blog</h1>
     </StyledNavigationStart>
     <StyledNavigationEnd>
       <IconButton icon={faBars} />
