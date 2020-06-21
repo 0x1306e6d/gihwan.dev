@@ -2,7 +2,7 @@ import React from "react"
 
 import { Box, Flex, Link } from "rebass"
 
-export default ({}) => {
+export default () => {
   return (
     <Flex alignItems="center" as="header">
       <Link href="/" variant="nav">
