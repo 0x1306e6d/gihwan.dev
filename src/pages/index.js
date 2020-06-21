@@ -4,7 +4,6 @@ import { graphql } from "gatsby"
 import { Box, Heading } from "rebass"
 
 import ArticleList from "../components/article-list"
-import DefaultLayout from "../layouts/default"
 
 export default ({
   data: {
@@ -14,12 +13,12 @@ export default ({
   const articles = edges.map(edge => edge.node)
 
   return (
-    <DefaultLayout>
+    <>
       <Box mb={4}>
         <Heading variant="display">All Articles</Heading>
       </Box>
       <ArticleList articles={articles} />
-    </DefaultLayout>
+    </>
   )
 }
 

@@ -3,21 +3,19 @@ import { graphql } from "gatsby"
 
 import { Flex, Heading, Text } from "rebass"
 
-import DefaultLayout from "../layouts/default"
-
 const Article = ({ data }) => {
   const { markdownRemark } = data
   const { frontmatter, html, timeToRead } = markdownRemark
 
   return (
-    <DefaultLayout>
+    <>
       <Heading variant="display">{frontmatter.title}</Heading>
       <Flex mb={2}>
         <Text mr={2}>{frontmatter.date}</Text>
         <Text>{timeToRead} min read</Text>
       </Flex>
       <div dangerouslySetInnerHTML={{ __html: html }} />
-    </DefaultLayout>
+    </>
   )
 }
 
