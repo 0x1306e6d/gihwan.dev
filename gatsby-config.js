@@ -26,6 +26,7 @@ module.exports = {
       options: {
         trackingId: "UA-138964328-2"
       }
-    }
+    },
+    "gatsby-plugin-theme-ui"
   ]
 }
