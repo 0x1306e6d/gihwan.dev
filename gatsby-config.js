@@ -11,14 +11,6 @@ module.exports = {
       resolve: `gatsby-transformer-remark`
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        google: {
-          families: ["Noto Sans KR"]
-        }
-      }
-    },
-    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-138964328-2"
