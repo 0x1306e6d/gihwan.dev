@@ -6,8 +6,8 @@ import { Box } from "rebass"
 const Container = ({ children }) => (
   <Box
     sx={{
-      mx: "auto",
-      px: 3
+      maxWidth: 1024,
+      mx: "auto"
     }}
   >
     {children}
