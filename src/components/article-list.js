@@ -1,92 +1,30 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styled from "styled-components"
 import { Link } from "gatsby"
 
-const StyledArticleListItem = styled.article`
-  margin-bottom: 64px;
-`
-
-const Title = styled.h2`
-  margin-top: 0;
-  margin-bottom: 16px;
-
-  font-size: 2.125rem;
-  font-weight: 500;
-  line-height: 2.5rem;
-  letter-spacing: 0.0073529412em;
-`
-
-const StyledLink = styled(props => <Link {...props} />)`
-  color: #000000;
-  text-decoration: none;
-  border-bottom: 1px solid #ffd55e;
-`
-
-const Metadata = styled.div`
-  display: flex;
-
-  flex: 1;
-  flex-direction: row;
-`
-
-const Date = styled.time`
-  margin-top: 0;
-  margin-bottom: 16px;
-
-  font-size: 0.75rem;
-  font-weight: 500;
-  line-height: 2rem;
-  letter-spacing: 0.1666666667em;
-`
-
-const Separator = styled.span`
-  margin-left: 16px;
-  margin-right: 16px;
-`
-
-const TimeToRead = styled.p`
-  margin-top: 0;
-  margin-bottom: 16px;
-
-  font-size: 0.75rem;
-  font-weight: 500;
-  line-height: 2rem;
-  letter-spacing: 0.1666666667em;
-`
-
-const Excerpt = styled.p`
-  margin-top: 0;
-  margin-bottom: 32px;
-
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  letter-spacing: 0.03125em;
-`
+import { Box, Flex, Heading, Text } from "rebass"
 
 const ArticleListItem = ({ article }) => (
-  <StyledArticleListItem>
-    <Title>
-      <StyledLink to={article.frontmatter.slug}>
-        {article.frontmatter.title}
-      </StyledLink>
-    </Title>
-    <Metadata>
-      <Date>{article.frontmatter.date}</Date>
-      <Separator />
-      <TimeToRead>{article.timeToRead} min read</TimeToRead>
-    </Metadata>
-    <Excerpt>{article.excerpt}</Excerpt>
-  </StyledArticleListItem>
+  <Box mb={4}>
+    <Box mb={2}>
+      <Link to={article.frontmatter.slug}>
+        <Heading>{article.frontmatter.title}</Heading>
+      </Link>
+    </Box>
+    <Flex mb={2}>
+      <Text mr={2}>{article.frontmatter.date}</Text>
+      <Text>{article.timeToRead} min read</Text>
+    </Flex>
+    <Text>{article.excerpt}</Text>
+  </Box>
 )
 
 const ArticleList = ({ articles }) => (
-  <div>
+  <Box>
     {articles.map(article => (
       <ArticleListItem key={article.id} article={article} />
     ))}
-  </div>
+  </Box>
 )
 
 ArticleList.propTypes = {

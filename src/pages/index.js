@@ -1,16 +1,10 @@
 import React from "react"
-import styled from "styled-components"
 import { graphql } from "gatsby"
+
+import { Box, Heading } from "rebass"
 
 import ArticleList from "../components/article-list"
 import DefaultLayout from "../layouts/default"
-
-const Heading = styled.h1`
-  font-size: 3.75rem;
-  font-weight: 300;
-  line-height: 3.75rem;
-  letter-spacing: -0.0083333333em;
-`
 
 export default ({
   data: {
@@ -21,7 +15,9 @@ export default ({
 
   return (
     <DefaultLayout>
-      <Heading>All Articles</Heading>
+      <Box mb={4}>
+        <Heading variant="display">All Articles</Heading>
+      </Box>
       <ArticleList articles={articles} />
     </DefaultLayout>
   )
