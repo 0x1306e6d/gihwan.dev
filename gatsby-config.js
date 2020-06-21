@@ -11,9 +11,6 @@ module.exports = {
       resolve: `gatsby-transformer-remark`
     },
     {
-      resolve: `gatsby-plugin-styled-components`
-    },
-    {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
