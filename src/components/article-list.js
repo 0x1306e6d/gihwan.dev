@@ -1,15 +1,26 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
 
-import { Box, Flex, Heading, Text } from "rebass"
+import { Box, Flex, Heading, Link, Text } from "rebass"
 
 const ArticleListItem = ({ article }) => (
   <Box mb={4}>
     <Box mb={2}>
-      <Link to={article.frontmatter.slug}>
-        <Heading>{article.frontmatter.title}</Heading>
-      </Link>
+      <Heading>
+        <Link
+          href={article.frontmatter.slug}
+          sx={{
+            color: "inherit",
+            textDecoration: "none",
+            ":hover, :focus": {
+              color: "primary",
+              textDecoration: "underline"
+            }
+          }}
+        >
+          {article.frontmatter.title}
+        </Link>
+      </Heading>
     </Box>
     <Flex mb={2}>
       <Text mr={2}>{article.frontmatter.date}</Text>
