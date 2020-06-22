@@ -1,3 +1,5 @@
+import github from "@theme-ui/prism/presets/github"
+
 export default {
   colors: {
     text: "#000",
@@ -65,6 +67,12 @@ export default {
       fontFamily: "body",
       fontWeight: "body",
       lineHeight: "body"
+    },
+    code: {
+      ...github
+    },
+    pre: {
+      ...github
     }
   }
 }
