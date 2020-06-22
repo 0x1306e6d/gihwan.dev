@@ -8,7 +8,7 @@ const ArticleListItem = ({ article }) => (
     <Box mb={2}>
       <Heading>
         <Link
-          href={article.frontmatter.slug}
+          href={article.frontmatter.path}
           sx={{
             color: "inherit",
             textDecoration: "none",
