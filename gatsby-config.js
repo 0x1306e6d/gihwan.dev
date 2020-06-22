@@ -16,6 +16,7 @@ module.exports = {
         trackingId: "UA-138964328-2"
       }
     },
-    "gatsby-plugin-theme-ui"
+    "gatsby-plugin-theme-ui",
+    "gatsby-plugin-mdx"
   ]
 }
