@@ -3,9 +3,9 @@ import React from "react"
 import { Box, Flex, Link, Text } from "rebass"
 
 export default () => (
-  <Flex mt="auto" p={4}>
+  <Flex mt="auto" p={5}>
     <Box mx="auto">
-      <Text variant="caps">
+      <Text variant="footer">
         Made by{" "}
         <Link
           href="https://gihwankim.com"
