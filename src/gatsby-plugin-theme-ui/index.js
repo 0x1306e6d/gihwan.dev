@@ -2,9 +2,9 @@ import github from "@theme-ui/prism/presets/github"
 
 export default {
   colors: {
-    text: "#000",
+    text: "#150402",
     background: "#fff",
-    primary: "#07c",
+    primary: "#6b70b2",
     secondary: "#30c",
     muted: "#f6f6f9",
     gray: "#dddddf",
@@ -68,7 +68,8 @@ export default {
       lineHeight: "body"
     },
     code: {
-      ...github
+      ...github,
+      backgroundColor: "#f5f5f5"
     },
     pre: {
       ...github
