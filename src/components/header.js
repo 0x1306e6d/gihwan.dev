@@ -4,7 +4,13 @@ import { Box, Flex, Link } from "rebass"
 
 export default () => {
   return (
-    <Flex alignItems="center" as="header">
+    <Flex
+      alignItems="center"
+      as="header"
+      px={[2, 3]}
+      py={2}
+      sx={{ borderBottomStyle: "dashed", borderBottomWidth: 1 }}
+    >
       <Link href="/" variant="nav">
         Gihwan's Blog
       </Link>

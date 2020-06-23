@@ -51,8 +51,7 @@ export default {
       color: "primary"
     },
     nav: {
-      fontSize: 1,
-      fontWeight: "bold",
+      fontSize: 2,
       display: "inline-block",
       p: 2,
       color: "inherit",

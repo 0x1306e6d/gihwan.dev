@@ -8,7 +8,6 @@ import Header from "../components/header"
 export default ({ children }) => (
   <Box
     sx={{
-      p: 4,
       color: "text",
       bg: "background",
       fontFamily: "body",
@@ -17,6 +16,8 @@ export default ({ children }) => (
     }}
   >
     <Header />
-    <Container>{children}</Container>
+    <Box px={4} py={[1, 3]}>
+      <Container>{children}</Container>
+    </Box>
   </Box>
 )
