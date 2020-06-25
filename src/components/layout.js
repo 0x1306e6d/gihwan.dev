@@ -19,7 +19,7 @@ export default ({ children }) => (
     }}
   >
     <Header />
-    <Box px={4} py={[1, 3]}>
+    <Box px={3} py={[1, 3]}>
       <Container>{children}</Container>
     </Box>
     <Footer />
