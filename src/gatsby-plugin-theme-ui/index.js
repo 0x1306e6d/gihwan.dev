@@ -77,7 +77,8 @@ export default {
       backgroundColor: "#f5f5f5"
     },
     pre: {
-      ...github
+      ...github,
+      padding: [3, 4]
     }
   }
 }
