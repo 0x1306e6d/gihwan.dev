@@ -29,7 +29,7 @@
     "@rebass/preset": "^4.0.5",
     "@theme-ui/prism": "^0.3.0",
     "gatsby": "^2.24.60",
-    "gatsby-plugin-google-analytics": "^2.3.13",
+    "gatsby-plugin-google-analytics": "^2.3.14",
     "gatsby-plugin-mdx": "^1.2.40",
     "gatsby-plugin-theme-ui": "^0.3.0",
     "gatsby-source-filesystem": "^2.3.30",
