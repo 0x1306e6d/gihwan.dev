@@ -32,7 +32,7 @@
     "gatsby-plugin-google-analytics": "^2.3.15",
     "gatsby-plugin-mdx": "^1.2.42",
     "gatsby-plugin-theme-ui": "^0.3.0",
-    "gatsby-source-filesystem": "^2.3.30",
+    "gatsby-source-filesystem": "^2.3.31",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "rebass": "^4.0.7",
