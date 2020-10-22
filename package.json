@@ -24,7 +24,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@mdx-js/mdx": "^1.6.18",
+    "@mdx-js/mdx": "^1.6.19",
     "@mdx-js/react": "^1.6.18",
     "@rebass/preset": "^4.0.5",
     "@theme-ui/prism": "^0.3.0",
